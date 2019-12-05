@@ -1,0 +1,37 @@
+{
+  "name": "portfolioproject",
+  "version": "1.0.0",
+  "description": "The Hills - nuCamp Portfolio Project",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -o css/ css/",
+    "start": "npm run watch:all",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:scss": "onchange './css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zdaniel827/Hills-apartments.git"
+  },
+  "author": "Zach Daniel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zdaniel827/Hills-apartments/issues"
+  },
+  "homepage": "https://github.com/zdaniel827/Hills-apartments#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.12.0",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.1",
+    "prettier": "1.19.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}

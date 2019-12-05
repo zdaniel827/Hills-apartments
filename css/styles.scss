@@ -1,0 +1,12 @@
+$logo-font-family: 'Permanent Marker', cursive; 
+$logo-font-size: 2.5rem;
+
+.fa-mountain{
+    font-size: $logo-font-size + 1.5rem;
+}
+
+.prop-name{
+    font-family: $logo-font-family;
+    padding-left: 15px;
+    font-size: $logo-font-size;
+}
