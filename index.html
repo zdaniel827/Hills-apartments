@@ -2,38 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Playfair+Display&display=swap" rel="stylesheet"> 
     <title>Document</title>
 </head>
 <body>
-    <header class="d-flex flex-column flex-sm-row">
-        <div class="d-flex align-items-center justify-content-center">
+    <header class="d-flex flex-column flex-sm-row my-3 pb-3 border-bottom">
+        <div class="d-flex align-items-center justify-content-center ml-sm-2 ml-lg-5">
             <i class="fas fa-mountain"></i>
             <span class="prop-name">The Hills </br> Apartments</span>
         </div>
-        <div class="">
-            <nav class="navbar navbar-light navbar-expand-md">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#indexNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="indexNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Floorplans</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Amenities</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Map</a></li>
-                        <li class="nav-item"><a class="nav-link" href="">Contact Us</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+        <nav class="navbar navbar-light navbar-expand-md d-flex justify-content-end ml-4 ml-lg-auto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#indexNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="indexNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link text-center" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-center" href="">Floorplans</a></li>
+                    <li class="nav-item"><a class="nav-link text-center" href="#">Amenities</a></li>
+                    <li class="nav-item"><a class="nav-link text-center" href="#">Map</a></li>
+                    <li class="nav-item"><a class="nav-link text-center" href="">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
+
+    <div class="container container-fluid">
+        <div class="row">
+            <div class="col-sm-8 col-lg-7 border">
+                <span>carousel</span>
+            </div>
+            <div class="col-sm-4 col-lg-5 border p-4">            
+                <h1 class="tagline text-center">Luxury at The Hills</h1>
+                <div class="prop-info text-justify mt-4 m-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident consectetur error rerum placeat ducimus suscipit animi aliquam. Laboriosam at excepturi temporibus molestiae quos deleniti magni maiores tenetur sapiente voluptatem?</p>
+                    <p class="d-none d-lg-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur beatae eum fuga iste aspernatur illum natus provident ipsum, debitis exercitationem eligendi mollitia dolores earum cum id adipisci nemo error.</p>
+                </div>
+                <hr/>
+                <div class="px-5 d-flex justify-content-around">
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- jQuery, Popper & Bootstrap js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>

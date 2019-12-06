@@ -1,12 +1,42 @@
-$logo-font-family: 'Permanent Marker', cursive; 
+$headline-font-family: 'Permanent Marker', cursive; 
+$body-font-family: 'Playfair Display', serif;
 $logo-font-size: 2.5rem;
+
+h1{
+    font-family: $headline-font-family;
+}
+
+.prop-info{
+    font-family: $body-font-family;
+}
 
 .fa-mountain{
     font-size: $logo-font-size + 1.5rem;
 }
 
 .prop-name{
-    font-family: $logo-font-family;
+    font-family: $headline-font-family;
     padding-left: 15px;
     font-size: $logo-font-size;
+}
+
+.container {
+    max-width: 1180px;
+}
+
+
+// Medium Viewport
+    
+@media (min-width: 768px){
+    nav{
+        margin-right: 0px;
+    }
+}
+
+//Large Viewport
+
+@media (min-width: 960px){
+    nav{
+        margin-right: 33px;
+    }
 }
