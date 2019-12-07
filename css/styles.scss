@@ -2,11 +2,13 @@ $headline-font-family: 'Permanent Marker', cursive;
 $body-font-family: 'Playfair Display', serif;
 $logo-font-size: 2.5rem;
 
-h1{
+h1, h2{
     font-family: $headline-font-family;
 }
 
-.prop-info{
+
+.nav-link,
+.prop-info p{
     font-family: $body-font-family;
 }
 
@@ -24,6 +26,10 @@ h1{
     max-width: 1180px;
 }
 
+.form-header{
+    font-size: $logo-font-size;
+}
+
 
 // Medium Viewport
     
@@ -38,5 +44,8 @@ h1{
 @media (min-width: 960px){
     nav{
         margin-right: 33px;
+    }
+    .nav-link{
+        font-size: 1.1rem;
     }
 }

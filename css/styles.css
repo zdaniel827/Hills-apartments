@@ -1,7 +1,8 @@
-h1 {
+h1, h2 {
   font-family: "Permanent Marker", cursive; }
 
-.prop-info {
+.nav-link,
+.prop-info p {
   font-family: "Playfair Display", serif; }
 
 .fa-mountain {
@@ -15,10 +16,15 @@ h1 {
 .container {
   max-width: 1180px; }
 
+.form-header {
+  font-size: 2.5rem; }
+
 @media (min-width: 768px) {
   nav {
     margin-right: 0px; } }
 
 @media (min-width: 960px) {
   nav {
-    margin-right: 33px; } }
+    margin-right: 33px; }
+  .nav-link {
+    font-size: 1.1rem; } }

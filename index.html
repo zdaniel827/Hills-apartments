@@ -46,7 +46,7 @@
                     <p class="d-none d-lg-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur beatae eum fuga iste aspernatur illum natus provident ipsum, debitis exercitationem eligendi mollitia dolores earum cum id adipisci nemo error.</p>
                 </div>
                 <hr/>
-                <div class="px-5 d-flex justify-content-around">
+                <div class="px-5 px-md-0 px-lg-5 d-flex justify-content-around">
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fab fa-instagram"></i></a>
                     <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fab fa-facebook"></i></a>
                     <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fab fa-twitter"></i></a>
@@ -54,10 +54,88 @@
                 </div>
             </div>
         </div>
+        <div class="row mt-5 justify-content-between">
+            <div class="col-md-4 d-flex justify-content-center justify-content-lg-start pl-lg-0">
+                <div class="card " style="width: 20rem;">
+                    <div class="card-header">
+                        Floorplans
+                    </div>
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center justify-content-lg-center">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-header">
+                        Amenities
+                    </div>
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center justify-content-lg-end mr-0 pr-lg-0">
+                <div class="card" style="width: 20rem;">
+                    <div class="card-header">
+                        Map
+                    </div>
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <h2 class="mt-5 text-center form-header">When do you want to move in?</h2>
+            <form action="" class="mx-md-5">
+                <div class="form-row my-3">
+                    <div class="col-6">
+                        <input type="text" class="form-control col" name="firstName" id="firstName" placeholder="First Name*" required>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control col" name="lastName" id="lastName" placeholder="Last Name*" required>
+                    </div>
+                </div>
+                <div class="form-row my-3">
+                    <div class="col">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email*" required>
+                    </div>
+                </div>
+                <div class="form-row my-3">
+                    <div class="col">
+                        <input type="tel" class="form-control" name="phoneNumber" id="phoneNumber"placeholder="Phone Number*" required>
+                    </div>
+                </div>
+                <div class="form-row my-3">
+                    <div class="col">
+                        <textarea class="form-control" name="" id="message" cols="30" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <div class="form-row my-3">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+    <footer class="jumbotron jumbotron-fluid mt-4 mb-0">
+        <div>&copy; <span id="year"></span> All Rights Reserved | <br/> Website Design by Zach Daniel</div>
+    </footer>
     <!-- jQuery, Popper & Bootstrap js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
