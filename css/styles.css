@@ -1,5 +1,9 @@
-h1, h2 {
+h1, h2,
+.card-header {
   font-family: "Permanent Marker", cursive; }
+
+.nav-item:hover {
+  border-bottom: black 1px solid; }
 
 .nav-link,
 .prop-info p {
@@ -19,9 +23,28 @@ h1, h2 {
 .form-header {
   font-size: 2.5rem; }
 
+.card-header {
+  font-size: 2.5rem; }
+
+.card-btns {
+  border-color: black;
+  color: black; }
+
+.footer-text {
+  font-size: .8rem; }
+
+#amenities .pet-policy > ul {
+  list-style-type: none; }
+
 @media (min-width: 768px) {
   nav {
-    margin-right: 0px; } }
+    margin-right: 0px; }
+  .card-header {
+    font-size: 2rem; }
+  .fp-card {
+    margin-top: 24px; }
+  .footer-text {
+    font-size: 1rem; } }
 
 @media (min-width: 960px) {
   nav {

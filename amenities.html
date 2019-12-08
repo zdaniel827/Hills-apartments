@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Playfair+Display&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <header class="d-flex flex-column flex-sm-row my-3 pb-3 border-bottom">
+        <div class="d-flex align-items-center justify-content-center ml-sm-2 ml-lg-5">
+            <i class="fas fa-mountain"></i>
+            <span class="prop-name">The Hills </br> Apartments</span>
+        </div>
+        <nav class="navbar navbar-light navbar-expand-md d-flex justify-content-end ml-4 ml-lg-auto">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#indexNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="indexNavbar">
+                <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-center" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-center" href="./floor-plans.html">Floorplans</a></li>
+                        <li class="nav-item active"><a class="nav-link text-center" href="#">Amenities</a></li>
+                        <li class="nav-item"><a class="nav-link text-center" href="./map.html">Map</a></li>
+                        <li class="nav-item"><a class="nav-link text-center" href="./contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container container-fluid" id="amenities">
+        <h2>Amenities</h2>
+        <div class="amenities-conatiner row">
+            <div class="community-ameneities col-12 col-md-4">
+                <div class="community-img">community image here</div>
+                <h3>Community Amenities</h3>
+                <ul>
+                    <li>Extravagant clubhouse with free Wi-Fi</li>
+                    <li>Elegant demonstration kitchen in clubhouse</li>
+                    <li>Fully equipped, 24/7 fitness facility with Fitness on Demand™</li>
+                    <li>BBQ & picnic area near the pool (a second area coming soon)</li>
+                    <li>Executive-level conference room with complimentary Keurig®</li>
+                    <li>Covered carports</li>
+                    <li>Luxurious pool open year-round</li>
+                    <li>Resort-style chaise lounges and cozy chairs, all sitting poolside</li>
+                    <li>Relaxing hot tub</li>
+                    <li>On-site management and maintenance</li>
+                </ul>
+            </div>
+            <div class="apartment-ameneities col-12 col-md-4">
+                <div class="apartment-img">apartment image here</div>
+                <h3>Amartment Amenities</h3>
+                <ul>
+                    <li>Fresh & modern one-, two-, and three-bedroom apartment homes</li>
+                    <li>Gourmet kitchen for the at-home chef</li>
+                    <li>Quartz countertops</li>
+                    <li>Stainless-steel range, microwave oven, dishwasher, and refrigerator</li>
+                    <li>Gas range</li>
+                    <li>Full-size washer & dryer</li>
+                    <li>Efficient appliances</li>
+                    <li>Walk-in closet for master bedrooms</li>
+                    <li>Pleasant patio or balcony for each home</li>
+                    <li>Cable-ready setup</li>
+                </ul>
+            </div>
+            <div class="pet-policy col col-md-4">
+                <div class="pet-policy-img">pet policy image here</div>
+                <h3>Pet Policy</h3>
+                <ul>
+                    <li>Vida Luxury Apartments welcomes pets.</li>
+                    <li>We accept dogs weighing 50 pounds or less, with a two-pet maximum per household.</li>
+                    <li>Breed & species restrictions apply.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="jumbotron jumbotron-fluid mt-4 mb-0">
+        <div class="d-flex justify-content-center pb-1">
+            &copy; <span id="year" style="padding-right: 3px;"></span>
+        </div>
+        <div class="footer-text text-center"> 
+            All Rights Reserved | Website Design by Zach Daniel
+        </div>
+    </footer>
+    <!-- jQuery, Popper & Bootstrap js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
