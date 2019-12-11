@@ -74,10 +74,6 @@
  
     // Add zoom and rotation controls to the map.
     map.addControl(new mapboxgl.NavigationControl());
-
-    map.on('load', function() {
-        Map.setDestination('Montreal, Quebec'); // On load, set the destination to "Montreal, Quebec".
-        });
   
     var marker = new mapboxgl.Marker()
         .setLngLat([-118.9863187, 37.6492294])
