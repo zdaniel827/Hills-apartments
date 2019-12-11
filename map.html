@@ -14,6 +14,7 @@
     <!-- Mapbox CDN -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css' type='text/css' />
     <title>Document</title>
 </head>
 <body>
@@ -38,8 +39,11 @@
         </nav>
     </header>
 
-    <div class="container container-fluid map">
-        <div id='map' style='width: 400px; height: 300px;'></div>
+    <div class="container container-fluid">
+        <h2>Map</h2>
+        <div class="row my-5 d-flex justify-content-center mx-xs-3">
+            <div id='map' class="map"></div>
+        </div>  
     </div>
 
     <footer class="jumbotron jumbotron-fluid mt-4 mb-0">
@@ -55,12 +59,31 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./js/scripts.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js'></script>
     <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiemRhbmllbDgyNyIsImEiOiJjazN3YTlpdnYwYnlxM2VraWk2MjM1Y3NrIn0.VkD48LAoTIgVFuvaW2ncqA';
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11'
-    });
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-119.0326, 37.6308],
+        zoom: 10
+});
+    map.addControl(new MapboxDirections({
+    accessToken: mapboxgl.accessToken
+    }), 'top-left');
+ 
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl());
+
+    map.on('load', function() {
+        Map.setDestination('Montreal, Quebec'); // On load, set the destination to "Montreal, Quebec".
+        });
+  
+    var marker = new mapboxgl.Marker()
+        .setLngLat([-119.0326, 37.6308])
+        .addTo(map);
+
+
     </script>
 </body>
 </html>
