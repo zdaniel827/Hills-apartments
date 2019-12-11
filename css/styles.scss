@@ -51,6 +51,10 @@ h1, h2, h3,
     font-size: .8rem;
 }
 
+.homepage-img-cards{
+    height: 211px;
+}
+
 //Amenities Page Styles
 
 #amenities{
@@ -89,6 +93,9 @@ h1, h2, h3,
         width: 850px; 
         height: 400px;
     }
+    .homepage-img-cards{
+        height: 155px;
+    }
 }
 
 //Large Viewport
@@ -99,5 +106,11 @@ h1, h2, h3,
     }
     .nav-link{
         font-size: 1.1rem;
+    }
+    .homepage-img-cards{
+        height: 220px;
+    }
+    .amenity-btn{
+        margin-top: 23px;
     }
 }

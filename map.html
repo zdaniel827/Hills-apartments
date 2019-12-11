@@ -65,8 +65,8 @@
     var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
-        center: [-119.0326, 37.6308],
-        zoom: 10
+        center: [-118.9863187, 37.6492294],
+        zoom: 14
 });
     map.addControl(new MapboxDirections({
     accessToken: mapboxgl.accessToken
@@ -80,7 +80,7 @@
         });
   
     var marker = new mapboxgl.Marker()
-        .setLngLat([-119.0326, 37.6308])
+        .setLngLat([-118.9863187, 37.6492294])
         .addTo(map);
 
 

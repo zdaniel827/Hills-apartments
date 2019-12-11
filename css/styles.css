@@ -36,6 +36,9 @@ h1, h2, h3,
 .footer-text {
   font-size: .8rem; }
 
+.homepage-img-cards {
+  height: 211px; }
+
 #amenities .pet-policy > ul {
   list-style-type: none; }
 
@@ -54,10 +57,16 @@ h1, h2, h3,
     font-size: 1rem; }
   .map {
     width: 850px;
-    height: 400px; } }
+    height: 400px; }
+  .homepage-img-cards {
+    height: 155px; } }
 
 @media (min-width: 960px) {
   nav {
     margin-right: 33px; }
   .nav-link {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  .homepage-img-cards {
+    height: 220px; }
+  .amenity-btn {
+    margin-top: 23px; } }
