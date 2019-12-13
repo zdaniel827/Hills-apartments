@@ -11,13 +11,10 @@ document.querySelector('#year').innerHTML = new Date().getFullYear();
 
 // Get data from API for floorplans
 
-const availableUnitsAPI = "https://api.rentcafe.com/rentcafeapi.aspx?requestType=apartmentavailability&apiToken=58a9b29d1bad4a258773d50c97089cb5&propertyId=658499"
-const currentAvailableUnits = document.querySelector("#available-units");
-const floorPlans = document.querySelector("#floor-plans");
+if($('div').is('.floor-plans')){const availableUnitsAPI = "https://api.rentcafe.com/rentcafeapi.aspx?requestType=apartmentavailability&apiToken=58a9b29d1bad4a258773d50c97089cb5&propertyId=658499"
+const currentAvailableUnits = document.querySelector("#floor-plans");
 
-
-floorPlans.addEventListener('click', fetchAndDisplayUnits);
-
+currentAvailableUnits.addEventListener('click', fetchAndDisplayUnits);
 
 async function fetchAndDisplayUnits() {
     let response = await fetch(availableUnitsAPI)
@@ -25,22 +22,16 @@ async function fetchAndDisplayUnits() {
         //console.log(data);
         
         .then(function (data) {
-            return data.forEach(element => {
-                let div = createNode('div');
-                div.innerHTML = `${element.FloorplanName}`;
-                div.classList.add("card-header");
-                append(currentAvailableUnits, div);
+            return data.forEach((element, index) => {
+                $('#accordian').append(`<div class="card"><div class="card-header" id="heading${index}"><h5 class="mb-0"><button class="btn btn-link" data-toggle="collapse" data-target="#collapse${index}" aria-expanded="true" aria-controls="collapse${index}">${element.FloorplanName}</button></h5></div><div id="collapse${index}" class="collapse" aria-labelledby="heading${index}" data-parent="#accordion"><div class="card-body"><ul><li>Rent - ${element.MinimumRent}</li><li>Square Footage - ${element.SQFT}</li><li>Beds and Bath - ${element.Beds} and ${element.Baths}</li></ul></div></div></div>`);
             }); 
-        })
-        .catch((error) => console.log(error));    
+        })   
 }
 
-function createNode(element) {
-    return document.createElement(element);
-}
 
-  function append(parent, el) {
-    return parent.appendChild(el);
-}
-
+$(currentAvailableUnits).click(function () {
+    $(currentAvailableUnits).attr("disabled", true);
+    currentAvailableUnits.style.cursor = "not-allowed";
+    return true;
+});}
 
