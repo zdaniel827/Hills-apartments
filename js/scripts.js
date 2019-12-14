@@ -1,18 +1,13 @@
 // Insert Year to bottom of page
 document.querySelector('#year').innerHTML = new Date().getFullYear();
 
-// // Nudge Marketing on Amenities Page
-
-// const amenitiesPage = document.querySelector("#amenities")
-
-// if (amenitiesPage) {
-    
-// }  
-
 // Get data from API for floorplans
 
-if($('div').is('.floor-plans')){const availableUnitsAPI = "https://api.rentcafe.com/rentcafeapi.aspx?requestType=apartmentavailability&apiToken=58a9b29d1bad4a258773d50c97089cb5&propertyId=658499"
-const currentAvailableUnits = document.querySelector("#floor-plans");
+var myAPI = config.MY_KEY;
+
+if ($('div').is('.floor-plans')) {
+    const availableUnitsAPI = `https://api.rentcafe.com/rentcafeapi.aspx?requestType=apartmentavailability&apiToken=${myAPI}&propertyId=658499`;
+    const currentAvailableUnits = document.querySelector("#floor-plans");
 
 currentAvailableUnits.addEventListener('click', fetchAndDisplayUnits);
 
